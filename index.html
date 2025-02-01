@@ -54,6 +54,11 @@
         font-optical-sizing: auto;
         font-style: normal;
       }
+      /* .cute-dog-mid {
+        background-image: url("images/cute-dog-mid.png") !important;
+        position: relative;
+        z-index: 1 !important;
+      } */
     </style>
   </head>
   <body>
@@ -68,30 +73,6 @@
                 Browse<span class="text-primary-color">4</span>Pets
               </p>
             </div>
-            <!-- <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 relative top-0 left-3/4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow relative left-60 top-5 text-xl text-black-1 font-normal"
-            >
-              <li><a href="">Find a pet</a></li>
-              <li><a href="">Breeds</a></li>
-              <li><a href="">Contact us</a></li>
-            </ul> -->
           </div>
           <div class="hidden lg:flex">
             <ul
@@ -496,14 +477,55 @@
       </section>
       <!-- Trending Products Section Ends -->
       <!-- Low Price Section Starts -->
-      <section>
+      <section class="mt-14 lg:mt-36 mb-12 p-3">
+        <h3 class="adlam-font text-black-1 text-4xl">Everyday low Price</h3>
         <div
-          class="grid grid-cols-1 lg:grid-cols-[784px_512px] border-2 border-black"
+          class="grid grid-cols-1 lg:grid-cols-[784px_512px] grid-rows-[360px_360px] lg:grid-rows-[480px] gap-6 pt-12"
         >
-          <div></div>
-          <div></div>
+          <!-- Left Part -->
+          <div
+            class="flex pl-7 lg:pl-20 items-start lg:items-center bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-xl"
+          >
+            <div class="pt-8 lg:pt-0">
+              <p class="sora-font text-black-1 text-xl hidden lg:block">
+                Under Price
+              </p>
+              <h3 class="adlam-font taxt-black-2 text-2xl lg:text-3xl">
+                Pet Grooming Mitt
+              </h3>
+              <p class="adlam-font text-white text-2xl hidden lg:block">
+                (Easy Hair Removal)
+              </p>
+              <h2 class="adlam-font text-black-2 text-4xl lg:text-[56px]">
+                \$7.99
+              </h2>
+            </div>
+            <!-- Image -->
+            <div class="pt-10 lg:pt-0 inline-block">
+              <img class="w-full" src="images/cute-dog-mid.png" alt="" />
+            </div>
+          </div>
+          <!-- Right Part -->
+          <!-- Content -->
+          <div
+            class="bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] flex rounded-xl"
+          >
+            <div class="pl-7 lg:pl-16 pt-8 lg:pt-13">
+              <h3 class="adlam-font taxt-black-2 text-2xl lg:text-3xl">
+                T-Shirt for Dogs
+              </h3>
+              <h2 class="adlam-font text-primary-color text-4xl lg:text-[56px]">
+                $7.99
+              </h2>
+            </div>
+            <!-- Image -->
+            <div class="pt-10 lg:pt-20 inline-block">
+              <img src="images/cute-pet-mid.png" alt="" />
+            </div>
+          </div>
         </div>
       </section>
+      <!-- Low Price Section Ends -->
     </main>
     <footer></footer>
   </body>
