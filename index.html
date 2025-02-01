@@ -44,6 +44,7 @@
       };
     </script>
     <style>
+      /* Google Fonts CSS */
       .adlam-font {
         font-family: "ADLaM Display", serif;
         font-weight: 400;
@@ -54,15 +55,26 @@
         font-optical-sizing: auto;
         font-style: normal;
       }
-      /* .cute-dog-mid {
-        background-image: url("images/cute-dog-mid.png") !important;
-        position: relative;
-        z-index: 1 !important;
-      } */
+      /* Animation CSS */
+      @keyframes color-change {
+        0% {
+          color: blue;
+        }
+        50% {
+          color: green;
+        }
+        100% {
+          color: purple;
+          transform: scaleY(1.1);
+        }
+      }
+      .animate-color-change {
+        animation: color-change 5s infinite alternate;
+      }
     </style>
   </head>
   <body>
-    <header class="max-w-[1320px] mx-auto">
+    <header class="max-w-[1320px] mx-auto p-3 lg:p-0">
       <!-- Nav Section Starts -->
       <nav class="sora-font">
         <div class="bg-base-100 flex justify-between items-center">
@@ -132,13 +144,15 @@
       <!-- Nav Section Ends -->
       <!-- Banner Section Starts -->
       <section
-        class="mt-7 lg:mt-32 h-[550px] lg:h-[750px] bg-banner-img bg-contain bg-no-repeat bg-bottom"
+        class="mt-8 lg:mt-32 h-[400px] lg:h-[750px] bg-banner-img bg-contain bg-no-repeat bg-bottom"
       >
         <div class="max-w-[680px] space-y-5">
-          <h1 class="text-black-1 text-6xl adlam-font">
+          <h1
+            class="text-black-1 text-3xl lg:text-6xl adlam-font animate-color-change"
+          >
             Pamper Your Pet, Because They Deserve the Best
           </h1>
-          <p class="text-black-1 text-xl sora-font">
+          <p class="text-black-1 text-base lg:text-xl sora-font">
             Discover a world of treats, toys, and essentials handpicked for your
             furry friends. Shop now and make tails wag with joy!
           </p>
@@ -151,7 +165,7 @@
     </header>
     <main class="max-w-[1320px] mx-auto">
       <!-- Categories Section Starts -->
-      <section class="mt-12 lg:mt-24">
+      <section class="mt-20 lg:mt-36 p-3 lg:p-0">
         <h3 class="adlam-font text-black-1 text-4xl">Browse By Categories</h3>
         <div
           class="grid grid-cols-2 lg:grid-cols-6 gap-3 lg:gap-6 pt-8 lg:pt-12"
@@ -237,7 +251,7 @@
       <!-- Categories Section Ends -->
       <!-- Trending Products Section Starts -->
       <section
-        class="mt-14 lg:mt-36 bg-none lg:bg-pink-bg px-3 lg:px-5 py-3 lg:py-24"
+        class="mt-20 lg:mt-36 bg-none lg:bg-pink-bg px-3 lg:px-5 py-3 lg:py-24"
       >
         <h3 class="adlam-font text-black-1 text-4xl">Trending Pet Products</h3>
         <div
@@ -477,7 +491,7 @@
       </section>
       <!-- Trending Products Section Ends -->
       <!-- Low Price Section Starts -->
-      <section class="mt-14 lg:mt-36 mb-12 p-3">
+      <section class="mt-20 lg:mt-36 p-3">
         <h3 class="adlam-font text-black-1 text-4xl">Everyday low Price</h3>
         <div
           class="grid grid-cols-1 lg:grid-cols-[784px_512px] grid-rows-[360px_360px] lg:grid-rows-[480px] gap-6 pt-12"
@@ -527,8 +541,10 @@
       </section>
       <!-- Low Price Section Ends -->
       <!-- Subscribe Section Starts -->
-      <section class="bg-[#FFF9F4 rounded-2xl">
-        <div class="flex flex-col lg:flex-row lg: justify-around items-center">
+      <section class="translate-y-[180px] px-3 lg:px-0">
+        <div
+          class="flex flex-col lg:flex-row lg: justify-around items-center bg-[#FFF9F4] rounded-2xl py-8 lg:py-5"
+        >
           <div>
             <img src="images/cute-pet-mid.png" alt="" />
           </div>
@@ -555,6 +571,48 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer
+      class="max-w-full mx-auto bg-bg-card pt-56 lg:pt-80 pb-10 lg:pb-32 px-3 lg:px-32"
+    >
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 justify-between justify-items-start lg:justify-items-center gap-y-9"
+      >
+        <!-- Left Part -->
+        <div class="space-y-4 lg:space-y-6">
+          <div class="flex items-center gap-x-3">
+            <img src="images/logo-footer.png" alt="" />
+            <h3 class="text-xl lg:text-2xl text-black-1 font-normal">
+              Browse<span class="text-primary-color">4</span>Pets
+            </h3>
+          </div>
+          <p class="sora-font text-base lg:text-xl text-black-1">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends
+          </p>
+        </div>
+        <!-- Middle Part -->
+        <div>
+          <ul
+            class="sora-font text-base lg:text-xl text-black-1 space-y-2 lg:space-y-8"
+          >
+            <li>Find a pet</li>
+            <li>Breeds</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <!-- Bottom Part -->
+        <div
+          class="sora-font text-base text-black-1 font-medium space-y-2 grid grid-cols-1 h-full content-center"
+        >
+          <p class="text-center flex">Follow Us</p>
+          <div class="flex space-x-8">
+            <i class="fa-brands fa-facebook w-full"></i>
+            <i class="fa-brands fa-instagram w-full"></i>
+            <i class="fa-brands fa-linkedin w-full"></i>
+            <i class="fa-brands fa-youtube w-full"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
