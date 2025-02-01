@@ -74,10 +74,10 @@
     </style>
   </head>
   <body>
-    <header class="max-w-[1320px] mx-auto p-3 lg:p-0">
+    <header>
       <!-- Nav Section Starts -->
-      <nav class="sora-font">
-        <div class="bg-base-100 flex justify-between items-center">
+      <nav class="max-w-full sora-font p-2 lg:p-4 bg-pink-bg">
+        <div class="flex justify-between items-center">
           <div class="dropdown flex items-center">
             <div class="flex items-center gap-x-2">
               <img class="hidden lg:flex" src="images/logo-header.png" alt="" />
@@ -141,10 +141,11 @@
           </ul>
         </div>
       </nav>
+      <hr class="lg:hidden text-stone-950 mt-2" />
       <!-- Nav Section Ends -->
       <!-- Banner Section Starts -->
       <section
-        class="mt-8 lg:mt-32 h-[400px] lg:h-[750px] bg-banner-img bg-contain bg-no-repeat bg-bottom"
+        class="max-w-[1320px] mx-auto mt-8 lg:mt-32 h-[400px] lg:h-[750px] bg-banner-img bg-contain bg-no-repeat bg-bottom p-3 lg:p-0"
       >
         <div class="max-w-[680px] space-y-5">
           <h1
@@ -540,6 +541,62 @@
         </div>
       </section>
       <!-- Low Price Section Ends -->
+      <!-- About Us Section Starts -->
+      <section class="mt-20 lg:mt-36 p-3 lg:p-0">
+        <h3 class="adlam-font text-black-1 text-4xl pb-7">About Us</h3>
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-4">
+          <!-- Image Part -->
+          <div>
+            <div class="grid grid-cols-2 grid-rows-[250px_300px] gap-4">
+              <div class="col-span-2 bg-[#F8CCFB] w-full rounded-xl">
+                <img
+                  class="h-full mx-auto"
+                  src="images/cute-pet-mid.png"
+                  alt=""
+                />
+              </div>
+              <div class="bg-bg-card rounded-xl">
+                <img class="h-full" src="images/cute-dog-mid.png" alt="" />
+              </div>
+              <div class="bg-[#ACD2FD] rounded-xl">
+                <img class="h-full" src="images/cute-pet-mid.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- Content Part -->
+          <div class="space-y-5 lg:space-y-9">
+            <div class="space-y-3">
+              <h2 class="text-primary-color text-2xl lg:text-5xl adlam-font">
+                We Can Keep Them Happy
+              </h2>
+              <p class="text-black-1 text-base lg:text-xl sora-font">
+                Pet an animal kept primarily for a person's company or
+                entertainment rather than as a working animals or a laboratory
+                animal.
+              </p>
+            </div>
+            <div class="space-y-3">
+              <h3 class="text-primary-color text-xl lg:text-3xl adlam-font">
+                Tell Us About Your Pet
+              </h3>
+              <p class="text-black-1 text-base lg:text-xl sora-font">
+                Pets Can give companionship to people who are living alone or
+                elderly adults who do not have adequate.
+              </p>
+              <hr />
+            </div>
+            <div class="space-y-3">
+              <h3 class="text-primary-color text-xl lg:text-3xl adlam-font">
+                Receive Regular And Reliable Deliveries
+              </h3>
+              <p class="text-black-1 text-base lg:text-xl sora-font">
+                People most commonly get pets for companionship, to protect a
+                home or property or attractiveness of the animals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Subscribe Section Starts -->
       <section class="translate-y-[180px] px-3 lg:px-0">
         <div
